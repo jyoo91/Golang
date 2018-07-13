@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/gorilla/mux" //원격경로 패키지
-	// go get github.com/gorilla/mux ---> 패키지 받아오기
+				// go get github.com/gorilla/mux ---> 패키지 받아오기
 )
 
 func main() {
@@ -22,7 +22,7 @@ func main() {
 		ReadTimeout:  15 * time.Second,
 	}
 	log.Fatal(server.ListenAndServe()) //HTTP 연결받고 요청에 응답
-	// 에러발생하면 에러메시지 출력하고 빠져나감 (메시지를 출력하고 os.Exit(1)호출하여 프로그램 종료 )
+					   // 에러발생하면 에러메시지 출력하고 빠져나감 (메시지를 출력하고 os.Exit(1)호출하여 프로그램 종료 )
 }
 
 func indexCTRL(w http.ResponseWriter, r *http.Request) { // 경로에 접속했을 때 실행할 함수
